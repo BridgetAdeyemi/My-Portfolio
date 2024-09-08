@@ -1,0 +1,664 @@
+/*Media Quaries (max-width 884px) */
+@media (max-width: 884px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #0f2836;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 2rem 0;
+  }
+  .nav-links a {
+    font-size: 3rem;
+  }
+  .burgar {
+    display: block;
+  }
+  .logo {
+    font-size: 3.5rem;
+    padding-left: 1rem;
+  }
+  header {
+    padding: 2rem 5rem;
+  }
+
+  .hero-content :nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  .hero-content :nth-child(2) {
+    font-weight: bold;
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .hero-icons {
+    margin-bottom: 10px;
+  }
+  .hero-img img {
+    width: 300px;
+    height: 350px;
+    margin-right: 40px;
+    border: 2rem solid #254556;
+  }
+  .hero-content .contact-btn button a {
+    font-size: 2rem;
+  }
+  .hero-content .contact-btn button {
+    border-radius: 50px;
+    padding: 15px 25px;
+  }
+  .about-img img {
+    width: 300px;
+  }
+  .about-content {
+    width: 48%;
+    text-align: center;
+  }
+  .about-content p {
+    font-size: 2.1rem;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    gap: 30px;
+  }
+
+  .modal-content {
+    margin: 10% auto;
+    padding: 0px;
+    width: 80%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .modal-body p {
+    font-size: 2.7rem;
+    padding: 25px;
+    line-height: 1.7;
+  }
+  .modal-body p span {
+    font-size: 3rem;
+    line-height: 0;
+  }
+  .buttons a:first-child button {
+    padding: 10px 30px;
+    margin: 6rem 15px 0px 0px;
+    font-size: 2rem;
+  }
+  .buttons a:last-child button {
+    padding: 8px 25px;
+    font-size: 2rem;
+  }
+  .resume-row {
+    grid-template-columns: 1fr;
+  }
+  #contact {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  label {
+    color: #aaa;
+    font-size: 2.3rem;
+  }
+  input {
+    width: 60rem;
+  }
+  input::placeholder {
+    font-size: 2rem;
+  }
+  textarea::placeholder {
+    font-size: 2rem;
+  }
+  .contact-info {
+    width: 65%;
+    font-weight: bold;
+  }
+  .contact-info :nth-child(2),
+  .contact-info :nth-child(3),
+  .contact-info :nth-child(4),
+  .contact-info :nth-child(5) {
+    font-size: 2.4rem;
+    line-height: 35px;
+  }
+  footer {
+    height: 14vh;
+  }
+  footer h3 {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 2rem;
+  }
+}
+
+/* max-width 834px*/
+@media screen and (max-width: 834px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-img img {
+    width: 420px;
+    height: 450px;
+    margin: 0 -10px 0 0;
+  }
+  .hero-content {
+    margin: 20px 0 0 -50px;
+    width: 70%;
+  }
+  .hero-content :nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
+  .hero-content :nth-child(2) {
+    font-weight: bold;
+    font-size: 5.5rem;
+    margin-bottom: 20px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .hero-content .contact-btn button a {
+    font-size: 2.3rem;
+  }
+  .hero-content .contact-btn button {
+    border-radius: 50px;
+    padding: 20px 35px;
+  }
+  #about {
+    background-color: #091b29;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .about-img img {
+    width: 500px;
+  }
+  .about-content {
+    width: 80%;
+  }
+  .about-content h1 {
+    font-size: 5rem;
+    color: #046ea7;
+  }
+  .about-content p {
+    font-size: 2.6rem;
+    line-height: 40px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 600px);
+    gap: 30px;
+  }
+  .image-container img {
+    height: 350px;
+  }
+  .contact-info {
+    width: 69%;
+  }
+}
+
+/*max-width 800px */
+@media screen and (max-width: 800px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-img img {
+    width: 420px;
+    height: 450px;
+    margin: 0 -10px 0 0;
+  }
+  .hero-content {
+    margin: 20px 0 0 -50px;
+  }
+  .hero-content :nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+  }
+  .hero-content :nth-child(2) {
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+  .hero-icons {
+    margin-bottom: 20px;
+  }
+  .hero-content .contact-btn button a {
+    font-size: 2.3rem;
+  }
+  .hero-content .contact-btn button {
+    border-radius: 50px;
+    padding: 20px 35px;
+  }
+  .about-content p {
+    font-size: 2.6rem;
+  }
+  .skill-img {
+    grid-template-columns: repeat(3, 200px);
+  }
+  .skill-img .img1 {
+    width: 180px;
+    height: 180px;
+  }
+  .skill-img img {
+    width: 120px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 550px);
+    gap: 30px;
+  }
+
+  .modal-content {
+    margin: 10% auto;
+    padding: 0px;
+    width: 90%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .modal-body p {
+    font-size: 3rem;
+    padding: 25px;
+  }
+  .modal-body p span {
+    font-size: 3rem;
+    line-height: 0;
+  }
+  .contact-info {
+    width: 71%;
+  }
+}
+
+/*max-width 500px */
+@media screen and (max-width: 500px) {
+  header {
+    padding: 2rem 3rem;
+  }
+  .hero-img img {
+    width: 400px;
+    height: 430px;
+    margin: 0 -5px 0 0;
+  }
+  .hero-content {
+    width: 70%;
+  }
+  .hero-content .contact-btn button a {
+    font-size: 2.1rem;
+  }
+  .hero-content .contact-btn button {
+    padding: 17px 30px;
+  }
+  .about-img img {
+    width: 350px;
+  }
+  .about-content {
+    width: 85%;
+  }
+  .about-content p {
+    font-size: 2.3rem;
+  }
+  .skill-img {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .skill-img .img1 {
+    width: 180px;
+    height: 180px;
+  }
+  .skill-img img {
+    width: 120px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    gap: 30px;
+  }
+  .image-container img {
+    height: 260px;
+  }
+  .modal-content {
+    margin: 20% auto;
+    padding: 0px;
+    width: 92%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .modal-body p {
+    font-size: 2.1rem;
+    padding: 10px;
+  }
+  .modal-body p span {
+    font-size: 2.2rem;
+    line-height: 0;
+  }
+  .buttons a:first-child button {
+    margin: 2rem 15px 0px 0px;
+  }
+  label {
+    color: #aaa;
+    font-size: 2.5rem;
+  }
+  input {
+    width: 46rem;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+  }
+  input::placeholder {
+    font-size: 2.4rem;
+  }
+  textarea::placeholder {
+    font-size: 2.4rem;
+  }
+  .contact-info {
+    width: 85%;
+  }
+  .contact-info :nth-child(2),
+  .contact-info :nth-child(3),
+  .contact-info :nth-child(4),
+  .contact-info :nth-child(5) {
+    font-size: 2.6rem;
+    line-height: 38px;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+
+/* max-width 412px */
+@media screen and (max-width: 412px) {
+  .hero-container {
+    padding-top: 95px;
+  }
+  .hero-img img {
+    width: 300px;
+    height: 330px;
+    margin: 0 -4px 0 0;
+  }
+  .hero-content {
+    width: 70%;
+  }
+  .hero-content :nth-child(1) {
+    font-size: 2.1rem;
+  }
+  .hero-content :nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 1.7rem;
+  }
+  .hero-content .contact-btn button a {
+    font-size: 1.8rem;
+  }
+  .hero-content .contact-btn button {
+    padding: 14px 25px;
+  }
+  .about-img img {
+    width: 350px;
+  }
+  .about-content {
+    width: 88%;
+  }
+  .about-content p {
+    font-size: 2.1rem;
+  }
+  .skill-img {
+    grid-template-columns: repeat(2, 170px);
+    row-gap: 10px;
+  }
+  .skill-img .img1 {
+    width: 150px;
+    height: 150px;
+  }
+  .skill-img img {
+    width: 100px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    gap: 30px;
+  }
+  .image-container img {
+    height: 230px;
+  }
+
+  .modal-content {
+    margin: 20% auto;
+    width: 92%;
+    height: auto;
+    padding-bottom: 70px;
+  }
+  .modal-body p {
+    font-size: 2.2rem;
+    padding: 20px;
+  }
+  .modal-body p span {
+    font-size: 2.3rem;
+    line-height: 0;
+  }
+
+  .buttons a:first-child button {
+    padding: 10px 25px;
+    margin: 1rem 10px 0px 0px;
+  }
+  .buttons a:last-child button {
+    padding: 8px 12px;
+    font-size: 1.6rem;
+  }
+  label {
+    color: #aaa;
+    font-size: 2.5rem;
+  }
+  input {
+    width: 37rem;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+  }
+  input::placeholder {
+    font-size: 2.4rem;
+  }
+  textarea::placeholder {
+    font-size: 2.4rem;
+  }
+  .contact-info {
+    width: 80%;
+  }
+  .contact-info :nth-child(2),
+  .contact-info :nth-child(3),
+  .contact-info :nth-child(4),
+  .contact-info :nth-child(5) {
+    font-size: 2.4rem;
+    line-height: 38px;
+  }
+}
+
+/* max-width 360px */
+@media screen and (max-width: 360px) {
+  .hero-container {
+    padding-top: 95px;
+  }
+  .hero-img img {
+    width: 300px;
+    height: 330px;
+    margin: 0 -4px 0 0;
+  }
+  .hero-content {
+    width: 70%;
+  }
+  .hero-content :nth-child(1) {
+    font-size: 2.1rem;
+  }
+  .hero-content :nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 1.7rem;
+  }
+  .hero-content .contact-btn button a {
+    font-size: 1.8rem;
+  }
+  .hero-content .contact-btn button {
+    padding: 14px 25px;
+  }
+  .about-img img {
+    width: 310px;
+  }
+  .about-content {
+    width: 89%;
+  }
+  .about-content p {
+    font-size: 2rem;
+  }
+  .skill-img {
+    grid-template-columns: repeat(2, 150px);
+    gap: 10px;
+  }
+  .skill-img .img1 {
+    width: 140px;
+    height: 140px;
+  }
+  .skill-img img {
+    width: 90px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    gap: 30px;
+  }
+  .modal-content {
+    margin: 20% auto;
+    width: 88%;
+    height: auto;
+    padding-bottom: 70px;
+  }
+  .modal-body p {
+    font-size: 2.2rem;
+    padding: 20px;
+  }
+  .modal-body p span {
+    font-size: 2.3rem;
+    line-height: 0;
+  }
+  .buttons a:first-child button {
+    margin: 0.5rem 15px 0px 0px;
+  }
+  input {
+    width: 31rem;
+    font-size: 2.5rem;
+  }
+  .contact-info {
+    width: 72%;
+  }
+  .contact-info :nth-child(2),
+  .contact-info :nth-child(3),
+  .contact-info :nth-child(4),
+  .contact-info :nth-child(5) {
+    font-size: 1.8rem;
+  }
+  footer {
+    height: 14vh;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+
+/*max-width 320px */
+@media screen and (max-width: 320px) {
+  .hero-img img {
+    width: 250px;
+    height: 280px;
+    margin: 0 -2px 0 0;
+  }
+  .hero-content {
+    width: 70%;
+  }
+  .about-img img {
+    width: 280px;
+  }
+  .about-content {
+    width: 87%;
+  }
+  .about-content p {
+    font-size: 1.8rem;
+  }
+  .skill-img {
+    grid-template-columns: repeat(2, 140px);
+    gap: 10px;
+  }
+  .skill-img .img1 {
+    width: 130px;
+    height: 130px;
+  }
+  .skill-img img {
+    width: 90px;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 285px);
+    gap: 30px;
+  }
+  .modal-content {
+    margin: 20% auto;
+    width: 95%;
+    height: auto;
+    padding-bottom: 70px;
+  }
+  .modal-body p {
+    font-size: 2.2rem;
+    padding: 20px;
+  }
+  .modal-body p span {
+    font-size: 2.3rem;
+    line-height: 0;
+  }
+  .buttons a:first-child button {
+    margin: 0px 15px 0px 0px;
+  }
+  .buttons a:last-child button {
+    padding: 8px 8px;
+    font-size: 1.5rem;
+  }
+  input {
+    width: 29rem;
+    font-size: 2.5rem;
+  }
+  .contact-info {
+    width: 72%;
+  }
+  .contact-info :nth-child(2),
+  .contact-info :nth-child(3),
+  .contact-info :nth-child(4),
+  .contact-info :nth-child(5) {
+    font-size: 2rem;
+  }
+}

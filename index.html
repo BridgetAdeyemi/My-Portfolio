@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,65 +17,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaquaries.css" />
     <title>Bridget Adeyemi</title>
   </head>
   <body>
-    <nav>
-      <!--Horizontal nav bar for desktop-->
-      <ul class="nav-list">
-        <li>
-          <a href="#"><h2>DevB.</h2></a>
-        </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume-body">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </li>
-      </ul>
-
-      <!--Vertical nav bar for Tablet and mobile-->
-      <ul class="sidebar">
-        <li>
-          <a href="#"><i class="fa-solid fa-xmark"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-house"></i>&nbsp; &nbsp;Home</a>
-        </li>
-        <li>
-          <a href="#about"
-            ><i class="fa-solid fa-user"></i>&nbsp; &nbsp;About</a
-          >
-        </li>
-        <li>
-          <a href="#skills"
-            ><i class="fa-solid fa-briefcase"></i>&nbsp; &nbsp;Skills</a
-          >
-        </li>
-        <li>
-          <a href="#projects"
-            ><i class="fa-solid fa-business-time"></i>&nbsp; &nbsp;Projects</a
-          >
-        </li>
-        <li>
-          <a href="#resume-body"
-            ><i class="fa-solid fa-graduation-cap"></i>&nbsp; &nbsp;Resume</a
-          >
-        </li>
-        <li>
-          <a href="#contact"
-            ><i class="fa-solid fa-envelope"></i>&nbsp; &nbsp;Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!--end of nav bars-->
+    <!--*** Header section for Navbar ***-->
+    <header>
+      <nav class="navbar">
+        <div class="logo">DevB</div>
+        <div class="burgar" onclick="toggleNav()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--*** Header section stops ***-->
 
     <!--*** Hero Section ***-->
     <section class="hero-section">
@@ -84,13 +51,17 @@
           <h2>Bridget Adeyemi</h2>
           <p>Front-end Web Developer</p>
           <div class="hero-icons">
-            <a href="https://www.linkedin.com/in/bridget-adeyemi-a742472b9/"
+            <a
+              href="https://www.linkedin.com/in/bridget-adeyemi-a742472b9/"
+              target="_blank"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
-            <a href="https://github.com/BridgetAdeyemi"
+            <a href="https://github.com/BridgetAdeyemi" target="_blank"
               ><i class="fa-brands fa-github"></i
             ></a>
-            <a href="https://x.com/Odunolami_1?t=MLmGYFR2E5ceTsEBXz4qyw&s=09"
+            <a
+              href="https://x.com/Odunolami_1?t=MLmGYFR2E5ceTsEBXz4qyw&s=09"
+              target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
           </div>
@@ -171,75 +142,92 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <img
-          src="images/project1-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal1"
-        />
+        <div class="image-container">
+          <img src="images/project1.jpg" alt="project1" class="project-img" />
+          <div class="overlay" data-modal="modal1">
+            <p>Todo List</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project2-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal2"
-        />
+        <div class="image-container">
+          <img src="images/project2.jpg" alt="project2" class="project-img" />
+          <div class="overlay" data-modal="modal2">
+            <p>Healguard <br />Medical Health website</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project3-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal3"
-        />
+        <div class="image-container">
+          <img src="images/project3.jpg" alt="project3" class="project-img" />
+          <div class="overlay" data-modal="modal3">
+            <p>Form Validation</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project4-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal4"
-        />
+        <div class="image-container">
+          <img src="images/project4.jpg" alt="project4" class="project-img" />
+          <div class="overlay" data-modal="modal4">
+            <p>E-commerce website <br />Landing page</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project5-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal5"
-        />
+        <div class="image-container">
+          <img src="images/project5a.jpg" alt="project5" class="project-img" />
+          <div class="overlay" data-modal="modal5">
+            <p>My Portfolio</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project6-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal6"
-        />
+        <div class="image-container">
+          <img src="images/project6.jpg" alt="project6" class="project-img" />
+          <div class="overlay" data-modal="modal6">
+            <p>Todo Web App</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project7-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal7"
-        />
+        <div class="image-container">
+          <img src="images/project7.jpg" alt="project7" class="project-img" />
+          <div class="overlay" data-modal="modal7">
+            <p>Shopping Cart</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project8-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal8"
-        />
+        <div class="image-container">
+          <img src="images/project8.jpg" alt="project8" class="project-img" />
+          <div class="overlay" data-modal="modal8">
+            <p>Random Quotes <br />Generator</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project9-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal9"
-        />
+        <div class="image-container">
+          <img src="images/project9.jpg" alt="project9" class="project-img" />
+          <div class="overlay" data-modal="modal9">
+            <p>Burgar Website</p>
+          </div>
+        </div>
 
-        <img
-          src="images/project10-img.jpg"
-          alt="project1"
-          class="project-img"
-          data-modal="modal10"
-        />
+        <div class="image-container">
+          <img src="images/project10.jpg" alt="project10" class="project-img" />
+          <div class="overlay" data-modal="modal10">
+            <p>Telecommunication <br />Website</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="images/project11.jpg" alt="project11" class="project-img" />
+          <div class="overlay" data-modal="modal11">
+            <p>Restaurant <br />website</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="images/project12.jpg" alt="project12" class="project-img" />
+          <div class="overlay" data-modal="modal12">
+            <p>
+              Doordash <br />
+              Website
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- Modal 1 -->
@@ -247,16 +235,24 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project1-img.jpg" alt="project 1 img" />
+            <img src="images/project1.jpg" alt="project1" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              officiis nobis deserunt corrupti explicabo pariatur eaque officia
-              aliquid, perferendis laborum labore natus, rerum ipsum quod alias
-              repellendus mollitia ipsa repellat.
+              <span>Todo List Project</span><br />
+              A simple and interactive task management application designed to
+              help users stay organized by keeping track of their daily tasks.
+              This project allows users to manage their to-do list efficiently
+              by adding, deleting, and marking tasks as completed or not
+              completed.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/Burger-Website"
+              <a
+                href="https://bridgetadeyemi.github.io/Todo-Project/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/Todo-Project"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -269,16 +265,22 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project2-img.jpg" alt="project 2 img" />
+            <img src="images/project2.jpg" alt="project2" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa
-              iste voluptatum quisquam, vero voluptatibus blanditiis quia, sit
-              consequuntur modi obcaecati illum reprehenderit sequi dicta quae
-              nobis quibusdam quas eligendi!
+              <span>Health Guard - Medical Health Website</span><br />This
+              project is a collaborative effort involving frontend developers,
+              UI/UX designers, and project management. Health Guard is a
+              comprehensive medical health platform designed to provide users
+              with a variety of healthcare services, all from the convenience of
+              their devices.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/DoorDash-Replica"
+              <a href="https://health-guard-rho.vercel.app/" target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/HealthGuard"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -291,17 +293,23 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project3-img.jpg" alt="project 3 img" />
+            <img src="images/project3.jpg" alt="project3" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>Form validation System</span><br />A form validation system
+              that ensures all required fields, including email, are correctly
+              filled before submission. Built with HTML, CSS, and JavaScript,
+              this project helps prevent form submission errors by validating
+              input in real time.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
               <a
-                href="https://github.com/BridgetAdeyemi/IPNX-Telecommunication-website"
+                href="https://bridgetadeyemi.github.io/Form-Validation-System/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/Form-Validation-System"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -314,12 +322,13 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project4-img.jpg" alt="project 3 img" />
+            <img src="images/project4.jpg" alt="project4" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>E- commerce Website</span><br />Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Officia soluta corrupti omnis nisi.
+              Impedit provident esse, eveniet voluptatem suscipit ab excepturi
+              fugiat voluptate deserunt facilis eos eius doloremque commodi
+              error.
             </p>
             <div class="buttons">
               <a href="#"><button>View life</button></a>
@@ -336,16 +345,19 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project5-img.jpg" alt="project 3 img" />
+            <img src="images/project5a.jpg" alt="project5" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>My portfolio</span><br />Welcome to my personal portfolio
+              website, where creativity meets innovation! This project
+              represents the culmination of my dedication to web development and
+              design. It serves as a showcase of my skills, passion, and the
+              projects I've had the privilege to work on.
             </p>
             <div class="buttons">
               <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/Vephla-Website"
+              <a
+                href="https://github.com/BridgetAdeyemi/Bridget-Portfolio"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -358,16 +370,23 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project6-img.jpg" alt="project 3 img" />
+            <img src="images/project6.jpg" alt="project6" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>Todo App</span><br />This To-Do App is designed to help
+              users manage tasks efficiently by allowing them to add, progress,
+              and delete tasks, as well as mark tasks as completed. The app is
+              fully responsive, ensuring an optimized experience on both desktop
+              and mobile devices.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/-Elite-Homes"
+              <a
+                href="https://to-do-app-pearl-alpha.vercel.app/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/To-Do-App"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -380,16 +399,24 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project7-img.jpg" alt="project 3 img" />
+            <img src="images/project7.jpg" alt="project7" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>Simple Shopping Cart</span><br />A simple shopping cart
+              project built as part of my JavaScript practice and learning. This
+              project allows users to input an item name, price, and quantity,
+              and then calculates the total price for the items added to the
+              cart. It also determines whether the user qualifies for free
+              shipping based on the total price.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/PC-Repairs"
+              <a
+                href="https://bridgetadeyemi.github.io/Simple-shopping-Cart/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/Simple-shopping-Cart"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -402,16 +429,23 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project8-img.jpg" alt="project 3 img" />
+            <img src="images/project8.jpg" alt="project8" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>Random Quotes Generator</span><br />An application that
+              displays a new random quote each time a button is clicked. Built
+              with HTML, CSS, and JavaScript, this project showcases my ability
+              to use JavaScript for generating dynamic content and handling user
+              interactions.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/Cheesecake-Website"
+              <a
+                href="https://bridgetadeyemi.github.io/Random-Quotes-Generator/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/Random-Quotes-Generator"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -424,16 +458,24 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project9-img.jpg" alt="project 3 img" />
+            <img src="images/project9.jpg" alt="project9" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>Burgar Website</span><br />This project is one of my
+              earliest creations, built using HTML and CSS. It’s a highly
+              responsive website with a clean and user-friendly interface,
+              designed to showcase a fictional burger restaurant. The primary
+              purpose of this project was to practice and enhance my web
+              development skills.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/Music-Website"
+              <a
+                href="https://bridgetadeyemi.github.io/Burger-Website/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/Burger-Website"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -446,16 +488,80 @@
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <div class="modal-body">
-            <img src="images/project10-img.jpg" alt="project 3 img" />
+            <img src="images/project10.jpg" alt="project10" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              soluta corrupti omnis nisi. Impedit provident esse, eveniet
-              voluptatem suscipit ab excepturi fugiat voluptate deserunt facilis
-              eos eius doloremque commodi error.
+              <span>Telecommunication Website</span><br />This project is a
+              recreation of an existing website, one of my earliest projects,
+              where I practiced using HTML and CSS positioning. The main goal
+              was to replicate the structure and layout of the website for
+              learning purposes, focusing on positioning elements using CSS.
             </p>
             <div class="buttons">
-              <a href="#"><button>View life</button></a>
-              <a href="https://github.com/BridgetAdeyemi/Todo-Project"
+              <a
+                href="https://bridgetadeyemi.github.io/IPNX-Telecommunication-website/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/IPNX-Telecommunication-website"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 11 -->
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="images/project11.jpg" alt="project11" />
+            <p>
+              <span>Restaurant Website</span><br />This project is a recreation
+              of a restaurant website, one of my earliest projects built using
+              HTML and CSS. It was designed for desktop view only and served as
+              a learning exercise to practice and improve my web development
+              skills.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://bridgetadeyemi.github.io/Restaurant-Website/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/Restaurant-Website"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 12-->
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="images/project12.jpg" alt="project12" />
+            <p>
+              <span>DoorDash Website</span><br />This project is a static
+              replica of the DoorDash website, created for learning purposes.
+              Using HTML and CSS only, it replicates the main layout and design
+              of the DoorDash homepage, providing a desktop-only experience.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://bridgetadeyemi.github.io/DoorDash-Replica/"
+                target="_blank"
+                ><button>View life</button></a
+              >
+              <a
+                href="https://github.com/BridgetAdeyemi/DoorDash-Replica"
+                target="_blank"
                 ><button>View on github</button></a
               >
             </div>
@@ -466,6 +572,7 @@
     <!-- *** End of project section ***-->
 
     <!-- *** Resume section*** -->
+    <div id="resume"><h2>Resume</h2></div>
     <div id="resume-body">
       <div class="resume-container">
         <div class="resume-row">
@@ -596,7 +703,7 @@
     <!-- *** Resume section ends ***-->
 
     <!--*** Contact section starts ***-->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <form action="#" id="contact-form">
         <h1>Contact</h1>
         <label for="name">Full Name</label>
