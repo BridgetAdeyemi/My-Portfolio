@@ -43,12 +43,15 @@
     font-size: 2rem;
     margin-bottom: 20px;
   }
+  .hero-content :nth-child(4) {
+    margin-bottom: 20px;
+  }
   .hero-icons {
     margin-bottom: 10px;
   }
   .hero-img img {
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 400px;
     margin-right: 40px;
     border: 2rem solid #254556;
   }
@@ -71,8 +74,11 @@
   }
   .project {
     display: grid;
-    grid-template-columns: repeat(2, 380px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+  .image-container img {
+    max-width: 350px;
   }
 
   .modal-content {
@@ -164,11 +170,16 @@
   .hero-content :nth-child(2) {
     font-weight: bold;
     font-size: 5.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .hero-content :nth-child(3) {
     font-size: 2.5rem;
     margin-bottom: 20px;
+  }
+  .hero-content :nth-child(4) {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
   .hero-content .contact-btn button a {
     font-size: 2.3rem;
@@ -199,11 +210,12 @@
   }
   .project {
     display: grid;
-    grid-template-columns: repeat(1, 600px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
   .image-container img {
     height: 350px;
+    max-width: 550px;
   }
   .contact-info {
     width: 69%;
@@ -251,7 +263,7 @@
     font-size: 2.6rem;
   }
   .skill-img {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 1fr);
   }
   .skill-img .img1 {
     width: 180px;
@@ -291,13 +303,35 @@
   header {
     padding: 2rem 3rem;
   }
+  .logo {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
   .hero-img img {
     width: 400px;
     height: 430px;
     margin: 0 -5px 0 0;
   }
   .hero-content {
-    width: 70%;
+    width: 75%;
+  }
+  .hero-content :nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
+  .hero-content :nth-child(2) {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 15px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .hero-content :nth-child(4) {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
   .hero-content .contact-btn button a {
     font-size: 2.1rem;
@@ -316,7 +350,7 @@
   }
   .skill-img {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -330,11 +364,12 @@
   }
   .project {
     display: grid;
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
   .image-container img {
     height: 260px;
+    max-width: 380px;
   }
   .modal-content {
     margin: 20% auto;
@@ -398,7 +433,7 @@
     margin: 0 -4px 0 0;
   }
   .hero-content {
-    width: 70%;
+    width: 74%;
   }
   .hero-content :nth-child(1) {
     font-size: 2.1rem;
@@ -410,6 +445,9 @@
   }
   .hero-content :nth-child(3) {
     font-size: 1.7rem;
+  }
+  .hero-content :nth-child(4) {
+    font-size: 1.9rem;
   }
   .hero-content .contact-btn button a {
     font-size: 1.8rem;
@@ -427,7 +465,7 @@
     font-size: 2.1rem;
   }
   .skill-img {
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
   }
   .skill-img .img1 {
@@ -439,11 +477,12 @@
   }
   .project {
     display: grid;
-    grid-template-columns: repeat(1, 350px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
   .image-container img {
     height: 230px;
+    max-width: 350px;
   }
 
   .modal-content {
@@ -501,13 +540,18 @@
   .hero-container {
     padding-top: 95px;
   }
+  .logo {
+    font-size: 3rem;
+    padding-left: 0.3rem;
+  }
   .hero-img img {
     width: 300px;
     height: 330px;
     margin: 0 -4px 0 0;
   }
   .hero-content {
-    width: 70%;
+    width: 78%;
+    padding-left: 1.5rem;
   }
   .hero-content :nth-child(1) {
     font-size: 2.1rem;
@@ -515,10 +559,11 @@
   .hero-content :nth-child(2) {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
   .hero-content :nth-child(3) {
     font-size: 1.7rem;
+    margin-bottom: 8px;
   }
   .hero-content .contact-btn button a {
     font-size: 1.8rem;
@@ -536,7 +581,7 @@
     font-size: 2rem;
   }
   .skill-img {
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   .skill-img .img1 {
@@ -548,8 +593,11 @@
   }
   .project {
     display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+  }
+  .image-container img {
+    max-width: 310px;
   }
   .modal-content {
     margin: 20% auto;
@@ -599,8 +647,28 @@
     height: 280px;
     margin: 0 -2px 0 0;
   }
+  .logo {
+    font-size: 2.5rem;
+    padding-left: 0.41rem;
+  }
   .hero-content {
-    width: 70%;
+    width: 74%;
+  }
+  .hero-content :nth-child(1) {
+    font-size: 2.1rem;
+  }
+  .hero-content :nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  .hero-content :nth-child(3) {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .hero-content :nth-child(4) {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
   .about-img img {
     width: 280px;
@@ -612,7 +680,7 @@
     font-size: 1.8rem;
   }
   .skill-img {
-    grid-template-columns: repeat(2, 140px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   .skill-img .img1 {
@@ -624,8 +692,11 @@
   }
   .project {
     display: grid;
-    grid-template-columns: repeat(1, 285px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+  }
+  .image-container img {
+    max-width: 305px;
   }
   .modal-content {
     margin: 20% auto;

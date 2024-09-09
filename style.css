@@ -31,7 +31,7 @@ header {
   padding-left: 4rem;
 }
 .burgar {
-  font-size: 4rem;
+  font-size: 3.3rem;
   font-weight: bold;
   display: none;
   cursor: pointer;
@@ -61,13 +61,14 @@ header {
   height: auto;
   gap: 300px;
   width: 100%;
+  padding-bottom: 5rem;
 }
 .hero-container {
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: space-around;
-  padding: 120px 0 76px 0;
+  justify-content: space-evenly;
+  padding: 110px 0 76px 0;
   min-width: 100%;
 }
 .hero-content {
@@ -89,10 +90,17 @@ header {
   line-height: 25px;
   font-weight: bold;
   font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.hero-content :nth-child(4) {
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 1.8rem;
   margin-bottom: 5px;
 }
 .hero-icons {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .hero-icons .fa-linkedin-in,
 .hero-icons .fa-github {
@@ -127,11 +135,11 @@ a .fa-github {
   font-size: 1.7rem;
 }
 .hero-img img {
-  width: 400px;
-  height: 450px;
+  width: 496px;
+  height: 550px;
   border-radius: 50%;
-  border: 2rem solid #254556;
-  filter: grayscale(10%);
+  border: 2rem solid #0771c2;
+  filter: grayscale(80%);
 }
 .hero-img {
   border-radius: 10%;
@@ -148,7 +156,7 @@ a .fa-github {
 }
 .about-img img {
   width: 400px;
-  filter: grayscale(80%);
+  filter: grayscale(94%);
   border-radius: 15px;
 }
 .about-content {
@@ -186,7 +194,7 @@ a .fa-github {
 }
 .skill-img {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -236,7 +244,7 @@ a .fa-github {
 }
 .project {
   display: grid;
-  grid-template-columns: repeat(3, 330px);
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
   justify-content: center;
   gap: 40px;
@@ -252,6 +260,7 @@ a .fa-github {
 .image-container img {
   display: block;
   width: 100%;
+  max-width: 330px;
   margin: 0 auto;
   height: 220px;
   border: 5px solid #035d8d;
@@ -272,6 +281,7 @@ a .fa-github {
   background-color: rgba(0, 0, 0, 0.8); /* Overlay color with opacity */
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -280,12 +290,19 @@ a .fa-github {
 .image-container:hover .overlay {
   opacity: 1; /* Show overlay on hover*/
 }
-.overlay p {
+.overlay :first-child {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.4;
+}
+.overlay :last-child {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 .modal {
   display: none;
@@ -625,7 +642,7 @@ textarea::placeholder {
 
 /* footer begins*/
 footer {
-  background-color: #046ea7;
+  background-color: #073050;
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -643,7 +660,7 @@ footer p {
   font-weight: bold;
 }
 footer p span {
-  color: #031d31;
+  color: #04abee;
   font-weight: 900;
 }
 /* footer ends*/
