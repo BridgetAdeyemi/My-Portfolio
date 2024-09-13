@@ -6,9 +6,12 @@ function toggleNav() {
   navLinks.classList.toggle("active");
 }
 
-// projects display modal
+/* projects display modal start*/
+
+// select all overlays with class "overlay"
 const overlays = document.querySelectorAll(".overlay");
 
+//loop through each overlay
 overlays.forEach((overlay) => {
   overlay.addEventListener("click", function () {
     const modalId = this.getAttribute("data-modal");
@@ -17,6 +20,7 @@ overlays.forEach((overlay) => {
   });
 });
 
+// this help to close the modal when clicking on x button
 const closeButtons = document.querySelectorAll(".close-btn");
 
 closeButtons.forEach((btn) => {
@@ -26,11 +30,13 @@ closeButtons.forEach((btn) => {
   });
 });
 
+// this Close the modal when clicking outside the modal content
 window.onclick = function (event) {
   if (event.target.classList.contains("modal")) {
     event.target.style.display = "none";
   }
 };
+/* project display each overlay*/
 
 //Aos animination
 AOS.init({
