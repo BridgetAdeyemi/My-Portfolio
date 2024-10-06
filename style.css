@@ -2,27 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  /* outline: 1px solid red;*/
 }
 html {
   font-family: "manrope", sans-serif;
   font-size: 62.5%;
-  overflow-x: hidden;
-  background-color: #091b29;
+  background-color: var(--background-color);
 }
+:root {
+  --background-color: #05141f;
+  --primary-color: #aaa;
+  --secondary-color: #031d31;
+  --accent-color: #ddd;
+}
+
 /* Navbar styling */
 header {
-  background-color: #091b29;
+  background-color: var(--background-color);
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 2rem 7rem;
+  padding: 2rem 6rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #aaa;
+  color: var(--accent-color);
 }
 .logo {
   font-size: 2.5rem;
@@ -45,13 +53,13 @@ header {
 }
 .nav-links a {
   text-decoration: none;
-  color: #aaa;
+  color: var(--accent-color);
   font-size: 1.5rem;
   padding: 0 10px;
   font-weight: bold;
 }
 .nav-links a:hover {
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* Navbar styling Stop */
@@ -59,8 +67,8 @@ header {
 /*hero section begins */
 .hero-section {
   height: auto;
-  gap: 300px;
   width: 100%;
+  max-width: 100%;
   padding-bottom: 5rem;
 }
 .hero-container {
@@ -69,11 +77,12 @@ header {
   align-content: center;
   justify-content: space-evenly;
   padding: 110px 0 76px 0;
-  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 .hero-content {
   width: 38%;
-  color: #aaa;
+  color: var(--primary-color);
   margin-top: 50px;
 }
 .hero-content :nth-child(1) {
@@ -90,20 +99,22 @@ header {
   line-height: 25px;
   font-weight: bold;
   font-size: 2.8rem;
-  margin-bottom: 15px;
-  color: #ddd;
+  margin-bottom: 10px;
+  color: var(--accent-color);
 }
 .hero-content :nth-child(4) {
   line-height: 25px;
   font-weight: bold;
   font-size: 1.8rem;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+  color: var(--primary-color);
 }
 .hero-icons {
   margin-bottom: 8px;
 }
 .hero-icons .fa-linkedin-in,
-.hero-icons .fa-github {
+.hero-icons .fa-github,
+.hero-icons .fa-envelope {
   font-size: 1.5rem;
   border: 1px solid #046ea7;
   padding: 8px;
@@ -118,28 +129,34 @@ header {
 }
 a .fa-x-twitter,
 a .fa-linkedin-in,
-a .fa-github {
-  color: #aaa;
+a .fa-github,
+a .fa-envelope {
+  color: var(--primary-color);
 }
-.contact-btn button {
+.hero-content .hireMe-btn {
+  margin-top: 2rem;
+}
+.hireMe-btn a {
   border: 2px solid #046ea7;
-  border-radius: 50px;
-  padding: 10px 35px 10px 35px;
-  margin-top: 15px;
+  border-radius: 5px;
+  padding: 1rem 3rem;
   background-color: #091b29;
-}
-.hero-content .contact-btn button a {
   text-decoration: none;
-  font-weight: bold;
-  color: #aaa;
-  font-size: 1.7rem;
 }
+.hero-content .hireMe-btn a {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
 .hero-img img {
+  max-width: 100%;
   width: 496px;
   height: 550px;
   border-radius: 50%;
-  border: 2rem solid #0771c2;
-  filter: grayscale(80%);
+  /* border: 2rem solid #0f6cb3;*/
+  box-shadow: 0 0 10px 10px #024e77;
+  filter: grayscale(85%);
 }
 .hero-img {
   border-radius: 10%;
@@ -148,10 +165,9 @@ a .fa-github {
 
 /* About section begins */
 #about {
-  background-color: #091b29;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: auto;
 }
 .about-img img {
@@ -169,7 +185,7 @@ a .fa-github {
 }
 .about-content p {
   font-size: 2rem;
-  color: #aaa;
+  color: var(--primary-color);
   line-height: 30px;
   letter-spacing: 0.5px;
   font-weight: bold;
@@ -200,7 +216,7 @@ a .fa-github {
   gap: 20px;
 }
 .skill-img .img1 {
-  background-color: #073050;
+  background-color: var(--secondary-color);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   width: 180px;
   height: 180px;
@@ -211,7 +227,7 @@ a .fa-github {
   justify-content: center;
 }
 .img1 p {
-  color: whitesmoke;
+  color: var(--accent-color);
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
@@ -242,6 +258,9 @@ a .fa-github {
   text-align: center;
   margin-bottom: 40px;
 }
+#projects h2 span {
+  color: var(--accent-color);
+}
 .project {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -264,7 +283,7 @@ a .fa-github {
   max-width: 330px;
   margin: 0 auto;
   height: 220px;
-  border: 5px solid #035d8d;
+  border: 5px solid #032641;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.8);
   transition: transform 0.5s ease;
@@ -280,7 +299,7 @@ a .fa-github {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8); /* Overlay color with opacity */
-  color: white;
+  color: var(--accent-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,7 +319,7 @@ a .fa-github {
 }
 .overlay :last-child {
   font-size: 1.3rem;
-  color: #aaa;
+  color: var(--primary-color);
   margin-top: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -321,7 +340,7 @@ a .fa-github {
   overflow-y: visible;
 }
 .modal-content {
-  background-color: #ddd;
+  background-color: var(--accent-color);
   margin: 3% auto;
   padding-bottom: 20px;
   width: 80%;
@@ -338,7 +357,7 @@ a .fa-github {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #ddd;
+  background-color: var(--accent-color);
   padding: 3px 11px;
   border-radius: 50%;
   box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.3);
@@ -430,7 +449,7 @@ a .fa-github {
   column-gap: 2px;
 }
 .col .title h2 {
-  color: #aaa;
+  color: var(--primary-color);
   padding: 0px 0px 20px 30px;
   font-size: 2.5rem;
 }
@@ -444,7 +463,7 @@ a .fa-github {
 .col .contents .box {
   position: relative;
   padding: 20px;
-  background-color: #073050;
+  background-color: #031d31;
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transition: all 0.4s;
@@ -465,7 +484,7 @@ a .fa-github {
 .box h4 {
   padding: 5px 0px 5px 0px;
   font-size: 1.2rem;
-  color: #aaa;
+  color: var(--primary-color);
   margin-bottom: 8px;
   font-weight: 900;
 }
@@ -477,17 +496,17 @@ a .fa-github {
 .box h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #aaa;
+  color: var(--primary-color);
 }
 .box h2 a i,
 .box h3 a i {
   color: whitesmoke;
 }
 .box h2 a:visited {
-  color: #aaa;
+  color: var(--primary-color);
 }
 .box p {
-  color: #ddd;
+  color: var(--accent-color);
   line-height: 25px;
   font-size: 1.6rem;
 }
@@ -506,12 +525,15 @@ form {
   flex-direction: column;
 }
 form h1 {
-  color: whitesmoke;
+  color: var(--accent-color);
   font-size: 4rem;
   margin-bottom: 20px;
 }
+form h1 span {
+  color: #046ea7;
+}
 label {
-  color: #aaa;
+  color: var(--primary-color);
   font-size: 1.5rem;
 }
 input {
@@ -521,7 +543,7 @@ input {
   border: 1px solid #046ea7;
   border-radius: 5px;
   margin-bottom: 20px;
-  color: #aaa;
+  color: var(--primary-color);
   font-size: 2rem;
 }
 input::placeholder {
@@ -534,13 +556,13 @@ textarea {
   margin-bottom: 20px;
   padding: 10px;
   font-size: 2rem;
-  color: #aaa;
+  color: var(--primary-color);
 }
 textarea::placeholder {
   font-size: 1.5rem;
 }
 .btn-submit {
-  background-color: #046ea7;
+  background-color: #024061;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -551,7 +573,7 @@ textarea::placeholder {
   margin-bottom: 10px;
 }
 .btn-submit:hover {
-  background-color: #035d8d;
+  background-color: #024061;
 }
 .loader {
   width: 100%;
@@ -594,7 +616,7 @@ textarea::placeholder {
   display: block;
 }
 .success-msg {
-  color: #ddd;
+  color: var(--accent-color);
 }
 .error-msg {
   color: red;
@@ -623,16 +645,19 @@ textarea::placeholder {
 }
 .contact-info :nth-child(4) {
   font-size: 1.8rem;
-  color: #aaa;
+  color: var(--primary-color);
 }
-.contact-info :nth-child(5) {
+.contact-info :nth-child(6) {
   font-size: 1.8rem;
-  color: #aaa;
+  color: var(--primary-color);
+}
+.contact-info a {
+  text-decoration: none;
 }
 .contact-info .fa-phone,
 .contact-info .fa-envelope {
   font-size: 2rem;
-  color: #aaa;
+  color: var(--primary-color);
 }
 .contact-info .fa-linkedin-in,
 .contact-info .fa-github,
@@ -643,7 +668,7 @@ textarea::placeholder {
 
 /* footer begins*/
 footer {
-  background-color: #073050;
+  background-color: #031d31;
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -652,12 +677,12 @@ footer {
 }
 footer h3 {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--accent-color);
   line-height: 30px;
 }
 footer p {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--accent-color);
   font-weight: bold;
 }
 footer p span {
