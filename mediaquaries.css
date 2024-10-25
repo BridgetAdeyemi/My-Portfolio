@@ -22,7 +22,6 @@
   .project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
   }
   .image-container img {
     max-width: 380px;
@@ -35,7 +34,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(9, 27, 41, 0.9);
+    background-color: rgb(23, 23, 33, 0.9);
     top: 60px;
     right: 0;
     width: 40%;
@@ -84,46 +83,44 @@
   .hero-img img {
     width: 350px;
     height: 400px;
-    box-shadow: 0 0 10px 10px #0481c5;
   }
 
-  .about-img img {
+  /*.about-img img {
     width: 300px;
   }
   .about-content {
     width: 46%;
-  }
+  }*/
   .about-content p {
     font-size: 2.1rem;
   }
   .project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
   }
   .image-container img {
     max-width: 350px;
   }
 
   .modal-content {
-    margin: 10% auto;
+    margin: 28% auto;
     padding: 0px;
     width: 80%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .modal-body p {
-    font-size: 2.7rem;
+    font-size: 1.5rem;
     padding: 25px;
     line-height: 1.7;
   }
-  .modal-body p span {
+  /*.modal-body p span {
     font-size: 3rem;
     line-height: 0;
-  }
+  }*/
   .buttons a:first-child button {
     padding: 10px 30px;
-    margin: 6rem 15px 0px 0px;
+    margin: 1rem 15px 0px 0px;
     font-size: 2rem;
   }
   .buttons a:last-child button {
@@ -161,7 +158,7 @@
   .contact-info :nth-child(3),
   .contact-info :nth-child(4),
   .contact-info :nth-child(5) {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 35px;
   }
   footer {
@@ -188,6 +185,7 @@
   .hero-content {
     width: 60%;
     text-align: center;
+    margin-top: 40px;
   }
   .hero-content :nth-child(1) {
     margin-bottom: 10px;
@@ -208,24 +206,23 @@
     line-height: 1.5;
   }
 
-  #about {
+  /* #about {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
   }
-  .about-img img {
+  /*.about-img img {
     width: 500px;
   }
   .about-content {
     width: 80%;
     text-align: center;
-  }
+  }*/
   .about-content h1 {
     font-size: 5rem;
-    color: #046ea7;
   }
   .about-content p {
-    font-size: 2.6rem;
+    font-size: 2rem;
     line-height: 40px;
   }
   .skill-img {
@@ -238,11 +235,20 @@
   .project {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    row-gap: 30px;
+  }
+  .image-container {
+    width: 500px;
+    height: 450px;
+    /*background-color: #1e1e2b;*/
+    background-color: #13131d;
+    padding: 2rem 0 0 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    /*clip-path: inset(0); Prevents scaling from affecting edges */
   }
   .image-container img {
-    height: 350px;
-    max-width: 550px;
+    width: 900px;
   }
 }
 
@@ -280,6 +286,9 @@
     border-radius: 50px;
     padding: 20px 35px;
   }
+  .about-content {
+    width: 74%;
+  }
   .about-content p {
     font-size: 2.6rem;
   }
@@ -296,7 +305,6 @@
   .project {
     display: grid;
     grid-template-columns: repeat(1, 550px);
-    gap: 30px;
   }
 
   .modal-content {
@@ -306,14 +314,14 @@
     height: auto;
     padding-bottom: 50px;
   }
-  .modal-body p {
+  /*.modal-body p {
     font-size: 3rem;
     padding: 25px;
   }
   .modal-body p span {
     font-size: 3rem;
     line-height: 0;
-  }
+  }*/
   #contact {
     flex-direction: column;
   }
@@ -398,14 +406,23 @@
     line-height: 1.5;
   }
 
-  .about-img img {
+  /*.about-img img {
     width: 350px;
   }
   .about-content {
     width: 85%;
+  }*/
+  .about-content h1 {
+    font-size: 4rem;
+  }
+  .about-content {
+    width: 80%;
   }
   .about-content p {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+  #skills h2 {
+    font-size: 4rem;
   }
   .skill-img {
     display: grid;
@@ -426,9 +443,16 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  #projects h2 {
+    font-size: 4rem;
+  }
+  .image-container {
+    width: 400px;
+  }
+
   .image-container img {
     height: 260px;
-    max-width: 380px;
+    width: 350px;
   }
   .modal-content {
     margin: 20% auto;
@@ -437,40 +461,40 @@
     height: auto;
     padding-bottom: 30px;
   }
-  .modal-body p {
+  /* .modal-body p {
     font-size: 2.1rem;
     padding: 10px;
   }
   .modal-body p span {
     font-size: 2.2rem;
     line-height: 0;
-  }
+  }*/
   .buttons a:first-child button {
     margin: 2rem 15px 0px 0px;
   }
   label {
     color: #aaa;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   input {
     width: 46rem;
     margin-bottom: 25px;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   input::placeholder {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   textarea::placeholder {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   .contact-info {
-    width: 85%;
+    width: 78%;
   }
   .contact-info :nth-child(2),
   .contact-info :nth-child(3),
   .contact-info :nth-child(4),
   .contact-info :nth-child(5) {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     line-height: 38px;
   }
   footer h3,
@@ -506,14 +530,14 @@
     font-size: 1.9rem;
   }
 
-  .about-img img {
+  /*.about-img img {
     width: 350px;
   }
   .about-content {
     width: 88%;
-  }
+  }*/
   .about-content p {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
   .skill-img {
     grid-template-columns: repeat(2, 1fr);
@@ -531,9 +555,12 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  .image-container {
+    width: 350px;
+  }
   .image-container img {
     height: 230px;
-    max-width: 350px;
+    width: 290px;
   }
 
   .modal-content {
@@ -542,14 +569,14 @@
     height: auto;
     padding-bottom: 70px;
   }
-  .modal-body p {
+  /*.modal-body p {
     font-size: 2.2rem;
     padding: 20px;
   }
   .modal-body p span {
     font-size: 2.3rem;
     line-height: 0;
-  }
+  }*/
 
   .buttons a:first-child button {
     padding: 10px 25px;
@@ -581,7 +608,7 @@
   .contact-info :nth-child(3),
   .contact-info :nth-child(4),
   .contact-info :nth-child(5) {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 38px;
   }
 }
@@ -615,14 +642,20 @@
     margin-bottom: 8px;
   }
 
-  .about-img img {
+  /*.about-img img {
     width: 310px;
-  }
+  }*/
   .about-content {
-    width: 89%;
+    width: 84%;
+  }
+  .about-content h1 {
+    font-size: 4rem;
   }
   .about-content p {
-    font-size: 2rem;
+    font-size: 1.7rem;
+  }
+  #skills h2 {
+    font-size: 4rem;
   }
   .skill-img {
     grid-template-columns: repeat(2, 1fr);
@@ -640,38 +673,58 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  #projects h2 {
+    font-size: 4rem;
+  }
+  .image-container {
+    width: 310px;
+  }
   .image-container img {
-    max-width: 310px;
+    width: 280px;
+  }
+  .modal-body .buttons {
+    margin-top: 20px;
   }
   .modal-content {
     margin: 20% auto;
     width: 88%;
     height: auto;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
-  .modal-body p {
+  /*.modal-body p {
     font-size: 2.2rem;
     padding: 20px;
   }
   .modal-body p span {
     font-size: 2.3rem;
     line-height: 0;
-  }
+  }*/
   .buttons a:first-child button {
     margin: 0.5rem 15px 0px 0px;
   }
+  label {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+  }
+  input::placeholder {
+    font-size: 1.6rem;
+  }
   input {
     width: 31rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
+  textarea::placeholder {
+    font-size: 1.6rem;
+  }
+
   .contact-info {
-    width: 72%;
+    width: 80%;
   }
   .contact-info :nth-child(2),
   .contact-info :nth-child(3),
   .contact-info :nth-child(4),
   .contact-info :nth-child(5) {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   footer {
     height: 14vh;
@@ -713,14 +766,14 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
-  .about-img img {
+  /* .about-img img {
     width: 280px;
-  }
+  }*/
   .about-content {
     width: 85%;
   }
   .about-content p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .skill-img {
     grid-template-columns: repeat(2, 1fr);
@@ -738,23 +791,26 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  .image-container {
+    width: 310px;
+  }
   .image-container img {
-    max-width: 300px;
+    width: 280px;
   }
   .modal-content {
     margin: 20% auto;
     width: 95%;
     height: auto;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
-  .modal-body p {
+  /*.modal-body p {
     font-size: 2.2rem;
     padding: 20px;
   }
   .modal-body p span {
     font-size: 2.3rem;
     line-height: 0;
-  }
+  }*/
   .buttons a:first-child button {
     margin: 0px 15px 0px 0px;
   }
@@ -764,7 +820,18 @@
   }
   input {
     width: 29rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+  }
+  label {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+  }
+  input::placeholder {
+    font-size: 1.6rem;
+  }
+
+  textarea::placeholder {
+    font-size: 1.6rem;
   }
   .contact-info {
     width: 72%;
