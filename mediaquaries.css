@@ -34,7 +34,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(23, 23, 33, 0.9);
+    background-color: rgb(23, 23, 33);
     top: 60px;
     right: 0;
     width: 40%;
@@ -346,6 +346,21 @@
   form {
     width: 80%;
   }
+  label {
+    color: #aaa;
+    font-size: 1.8rem;
+  }
+  input {
+    width: 46rem;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+  }
+  input::placeholder {
+    font-size: 1.8rem;
+  }
+  textarea::placeholder {
+    font-size: 1.8rem;
+  }
   .contact-info {
     width: 80%;
   }
@@ -588,18 +603,18 @@
   }
   label {
     color: #aaa;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
   input {
     width: 37rem;
     margin-bottom: 25px;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
   input::placeholder {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
   textarea::placeholder {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
   .contact-info {
     width: 80%;
