@@ -182,8 +182,9 @@ a .fa-envelope {
   /*box-shadow: 0 0 10px 10px #673ca8;*/
   border: 5px solid #5f4685;
   filter: grayscale(25%);
-  /* background-color: #a89db9;*/
   background-color: #9eaad3;
+  /* background-color: #a89db9;*/
+
   /*background-color: #a8b3da;*/
   /*background-color: #13081a;*/
 }
