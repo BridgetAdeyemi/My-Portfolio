@@ -176,12 +176,16 @@ a .fa-envelope {
 .hero-img img {
   max-width: 100%;
   width: 410px;
-  height: 450px;
+  height: 440px;
   border-radius: 50%;
   /* border: 2rem solid #0f6cb3;*/
   /*box-shadow: 0 0 10px 10px #673ca8;*/
-  border: 5px solid #673ca8;
-  filter: grayscale(85%);
+  border: 5px solid #5f4685;
+  filter: grayscale(25%);
+  /* background-color: #a89db9;*/
+  background-color: #9eaad3;
+  /*background-color: #a8b3da;*/
+  /*background-color: #13081a;*/
 }
 .hero-img {
   border-radius: 10%;
@@ -345,6 +349,7 @@ a .fa-envelope {
 }
 .overlay button:hover {
   background-color: #342f36;
+  border: 1px solid #aaa;
   color: #fff;
 }
 
@@ -473,13 +478,12 @@ a .fa-envelope {
 }
 .buttons a:first-child button {
   padding: 10px 30px;
-  border: none;
+  border: 1px solid #854ce6;
   background-color: #1c1e27;
   color: white;
   border-radius: 6px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-right: 10px;
-
   text-decoration: none;
   font-weight: bold;
   transition: all 0.5s ease;

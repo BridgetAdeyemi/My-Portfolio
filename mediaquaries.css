@@ -470,7 +470,7 @@
     width: 350px;
   }
   .modal-content {
-    margin: 20% auto;
+    margin: 25% auto;
     padding: 0px;
     width: 92%;
     height: auto;
@@ -486,6 +486,7 @@
   }*/
   .buttons a:first-child button {
     margin: 2rem 15px 0px 0px;
+    font-size: 1.4rem;
   }
   label {
     color: #aaa;
@@ -579,7 +580,7 @@
   }
 
   .modal-content {
-    margin: 20% auto;
+    margin: 25% auto;
     width: 92%;
     height: auto;
     padding-bottom: 70px;
@@ -701,7 +702,7 @@
     margin-top: 20px;
   }
   .modal-content {
-    margin: 20% auto;
+    margin: 25% auto;
     width: 88%;
     height: auto;
     padding-bottom: 20px;
