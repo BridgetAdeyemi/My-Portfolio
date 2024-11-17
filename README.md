@@ -24,4 +24,4 @@ The primary goal of this portfolio website is to serve as a central hub for show
 As I continue to grow and work on new projects, I plan to update the website regularly, keeping the content fresh and reflective of my latest achievements.
 
 **Live Demo**            
-Checkout the live version of the project here https://bridgetadeyemi.github.io/My-portfolio/
+Checkout the live version of the project here  https://bridgetadeyemi.github.io/My-Portfolio/
